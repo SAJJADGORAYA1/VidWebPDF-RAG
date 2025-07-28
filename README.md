@@ -1,4 +1,4 @@
-# 🧠 YouTube & PDF RAG Assistant
+#  YouTube & PDF RAG Assistant
 
 ![App Demo](https://via.placeholder.com/800x400?text=App+Screenshot+Here)
 
@@ -6,24 +6,24 @@ A privacy-focused, locally running **Retrieval-Augmented Generation (RAG)** syst
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 This app combines **modern LLM techniques** with **local vector search** to deliver fast, private, and explainable responses using real document context.
 
-### ✅ Key Features
-- 🎥 **YouTube Transcript Retrieval**  
-- 📄 **PDF Text Extraction**  
-- 🌐 **Web Page Content Scraping**  
-- 🧠 **LangChain-based Vector Search (FAISS)**  
-- 💬 **LLM-Powered Q&A with RAG Chain**  
-- 🖥️ **Local Deployment with Ollama**  
-- 🔐 **Data Privacy – Everything runs on your machine**
+###  Key Features
+-  **YouTube Transcript Retrieval**  
+-  **PDF Text Extraction**  
+-  **Web Page Content Scraping**  
+-  **LangChain-based Vector Search (FAISS)**  
+-  **LLM-Powered Q&A with RAG Chain**  
+-  **Local Deployment with Ollama**  
+-  **Data Privacy – Everything runs on your machine**
 
 ---
 
-## 🧩 Core Concepts Explained
+##  Core Concepts Explained
 
-### 🔁 Retrieval-Augmented Generation (RAG)
+###  Retrieval-Augmented Generation (RAG)
 RAG is a framework where **external knowledge is retrieved first** and then passed to a language model for answer generation. This helps reduce hallucination and ensures answers are **grounded in source documents**.
 
 In this app:
@@ -34,12 +34,12 @@ In this app:
 
 ---
 
-### 🧠 Vector Embeddings & Semantic Search
+###  Vector Embeddings & Semantic Search
 - The **`OllamaEmbeddings`** class generates high-dimensional vector representations of text using your chosen local model.
 - Similarity search uses **FAISS**, a fast approximate nearest neighbor library.
 - **Query vector** is compared against **document vectors** to find the most relevant chunks.
 
-### 📦 Chunking & Text Splitting
+###  Chunking & Text Splitting
 Text is split using **LangChain’s RecursiveCharacterTextSplitter**, preserving meaning and ensuring context is retained across chunk boundaries.
 
 ```python
@@ -53,7 +53,7 @@ This helps the retriever deliver coherent document segments to the LLM.
 
 ---
 
-### 🤖 LLM Integration with Ollama
+###  LLM Integration with Ollama
 - Uses **Ollama's local server** (`ollama serve`) to run LLMs like `phi3:mini` or `mistral:7b-instruct` directly on Apple Silicon.
 - No cloud APIs are involved — ideal for **offline and secure setups**.
 - Streamlit checks connectivity to `localhost:11434` to ensure Ollama is running.
@@ -68,7 +68,7 @@ Ollama(
 
 ---
 
-### 🔄 Prompt Engineering & Contextual QA
+###  Prompt Engineering & Contextual QA
 Prompt format is minimal and task-specific:
 
 ```text
@@ -81,15 +81,15 @@ This design ensures the model focuses **only on grounded context** and avoids ha
 
 ---
 
-## 🛠️ Installation Guide
+##  Installation Guide
 
-### ✅ Requirements
+###  Requirements
 - macOS with M1/M2/M3 chip
 - Python 3.10+
 - [Ollama](https://ollama.ai) installed locally
 - At least 8GB RAM (recommended)
 
-### 📥 Setup Instructions
+### Setup Instructions
 
 ```bash
 # Clone the repo
@@ -104,7 +104,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 📦 Install Ollama Models
+###  Install Ollama Models
 ```bash
 # Start the Ollama server
 ollama serve
@@ -116,7 +116,7 @@ ollama pull mistral:7b-instruct
 
 ---
 
-## ▶️ Running the App
+##  Running the App
 
 ```bash
 streamlit run app.py
@@ -126,7 +126,7 @@ Then open `http://localhost:8501` in your browser.
 
 ---
 
-## 📊 Performance Tuning
+##  Performance Tuning
 
 - **Chunk Size**: Number of characters per text segment (500 is ideal)
 - **Chunk Overlap**: Overlap between chunks to preserve context
@@ -136,7 +136,7 @@ Then open `http://localhost:8501` in your browser.
 
 ---
 
-## 🛡️ Security & Privacy
+##  Security & Privacy
 
 This assistant is **fully local**:
 - No data leaves your device
@@ -145,7 +145,7 @@ This assistant is **fully local**:
 
 ---
 
-## 🧪 Example Use Cases
+##  Example Use Cases
 
 ### YouTube Transcripts
 > Upload a lecture video link and ask:  
@@ -161,7 +161,7 @@ This assistant is **fully local**:
 
 ---
 
-## 🤯 Tech Stack
+##  Tech Stack
 
 | Component              | Tech Used                  |
 |------------------------|----------------------------|
@@ -176,7 +176,7 @@ This assistant is **fully local**:
 
 ---
 
-## 📚 Further Reading
+##  Further Reading
 
 - [Ollama Documentation](https://ollama.ai)
 - [LangChain RAG Docs](https://docs.langchain.com/docs/use-cases/question-answering/)
@@ -191,15 +191,3 @@ This assistant is **fully local**:
 - Token usage tracking and optimization
 
 ---
-
-## 💡 Tip
-
-> Test with this working YouTube video:  
-> `https://www.youtube.com/watch?v=Gfr50f6ZBvo`
-
----
-
-## 🤝 Credits
-
-Created by [Your Name]  
-Inspired by the amazing local-first AI movement!
