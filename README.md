@@ -1,6 +1,6 @@
 #  YouTube & PDF RAG Assistant
 
-![App Demo](https://via.placeholder.com/800x400?text=App+Screenshot+Here)
+
 
 A privacy-focused, locally running **Retrieval-Augmented Generation (RAG)** system powered by **Ollama** and optimized for **Apple Silicon (M1/M2/M3)**. This assistant allows you to **extract knowledge** from YouTube videos (via transcripts), PDF documents, and web pages — and ask questions in natural language.
 
@@ -93,8 +93,7 @@ This design ensures the model focuses **only on grounded context** and avoids ha
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/youtube-pdf-rag-assistant.git
-cd youtube-pdf-rag-assistant
+git clone https://github.com/SAJJADGORAYA1/VidWebPDF-RAG
 
 # Create and activate virtual environment
 python3 -m venv venv
@@ -145,21 +144,6 @@ This assistant is **fully local**:
 
 ---
 
-##  Example Use Cases
-
-### YouTube Transcripts
-> Upload a lecture video link and ask:  
-> “Summarize the key arguments about neural networks.”
-
-### Web Pages
-> Analyze Wikipedia pages like:  
-> “Compare LLMs with traditional rule-based NLP systems.”
-
-### PDF Reports
-> Upload a PDF and ask:  
-> “What are the three main recommendations from this document?”
-
----
 
 ##  Tech Stack
 
@@ -184,7 +168,7 @@ This assistant is **fully local**:
 
 ---
 
-## 🧠 Future Improvements
+## Future Improvements
 - Add image-based PDF OCR using Tesseract
 - Support for audio files with Whisper
 - History persistence and export options
