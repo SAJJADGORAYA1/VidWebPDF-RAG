@@ -1,0 +1,9 @@
+streamlit
+PyPDF2
+requests
+youtube-transcript-api
+langchain
+langchain-community
+ollama
+faiss-cpu
+tiktoken
