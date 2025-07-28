@@ -169,18 +169,18 @@ This assistant is **fully local**:
 ---
 
 ## Future Improvements
--OCR for Scanned PDFs using Tesseract or EasyOCR.
--Web Search Integration via Google/Bing/DDG APIs.
--API Key Support for OpenAI, Claude, Gemini, Mistral, etc.
--Connect custom local/remote open-source LLMs.
--Custom Prompt Templates and chat personas.
--Upload Personal Knowledge Base: Notes, docs, and HTML files.
--Project Folders & Tags for organizing documents.
--Chat History & Export in Markdown or JSON.
--Token Usage Tracking for API-based models.
--Combine video, PDF, and web in one query.
--Offline/Online Mode Switching between local Ollama and cloud APIs.
--Scheduled Auto-Refresh of web content and vector stores.
--Voice Input Support for hands-free querying.
+- OCR for Scanned PDFs using Tesseract or EasyOCR.
+- Web Search Integration via Google/Bing/DDG APIs.
+- API Key Support for OpenAI, Claude, Gemini, Mistral, etc.
+- Connect custom local/remote open-source LLMs.
+- Custom Prompt Templates and chat personas.
+- Upload Personal Knowledge Base: Notes, docs, and HTML files.
+- Project Folders & Tags for organizing documents.
+- Chat History & Export in Markdown or JSON.
+- Token Usage Tracking for API-based models.
+- Combine video, PDF, and web in one query.
+- Offline/Online Mode Switching between local Ollama and cloud APIs.
+- Scheduled Auto-Refresh of web content and vector stores.
+- Voice Input Support for hands-free querying.
 
 ---
